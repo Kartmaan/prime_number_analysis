@@ -1,6 +1,8 @@
 def isprime(x) : #<int>
     """Returns True if the number is prime, False otherwise"""
 
+    x = int(x)
+
     for val in reversed(range(x + 1)) :
         if val > 1: 
             for n in reversed(range(2, val)): 
@@ -11,6 +13,8 @@ def isprime(x) : #<int>
 
 def primeGen(n) : #<int>
     """Return the first n prime numbers"""
+
+    n = int(n)
 
     primeList = []
     num = 2 
@@ -29,6 +33,9 @@ def primeGen(n) : #<int>
 def primeSearch(min, max) : # <int> <int>
     """Find prime numbers in a range of numbers
     from min to max """
+
+    min = int(min)
+    max = int(max)
 
     primeList = []
 
